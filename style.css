@@ -26,12 +26,22 @@
   --section-block-margin: 1.5rem;
 }
 
+/* === Set Font === */
 h1,
 h2 {
   font-family: "Young Serif", serif;
   font-weight: 400;
   font-style: normal;
 }
+
+.recipe-text,
+.subtitle--prep-time,
+.recipe-li {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/* === END:Set Font === */
 
 body {
   background-color: var(--eggshell);
@@ -59,13 +69,6 @@ li {
 
 li > .recipe-text {
   padding-left: 0.9rem;
-}
-
-.recipe-text,
-.subtitle--prep-time {
-  font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
 }
 
 .recipe-title {
@@ -108,7 +111,7 @@ li > .recipe-text {
   padding: 0.5rem 0 1.5rem 1.5rem;
 }
 
-.recipe-section:not(:first-of-type):not(:last-of-type)  {
+.recipe-section:not(:first-of-type):not(:last-of-type) {
   border-bottom: var(--light-grey) 1px solid;
 }
 
@@ -140,10 +143,39 @@ tr > .nutrition-value {
   font-weight: 600;
 }
 
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding-block: 0.5rem;
+  text-align: left;
+}
+
+tr:not(:last-of-type) {
+  border-bottom: var(--light-grey) solid 1px;
+}
+
+th {
+  padding-left: 2rem;
+}
+
+.recipe-section--nutrition > .recipe-text {
+  padding-block: 1rem;
+}
+
 @media screen and (max-width: 376px) {
   main {
     max-width: 100ch;
   }
+}
+
+/* ===== Footer ===== */
+
+footer {
+  margin-top: 0.75rem;
 }
 
 .attribution {
@@ -154,3 +186,5 @@ tr > .nutrition-value {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* ===== END:Footer ===== */
