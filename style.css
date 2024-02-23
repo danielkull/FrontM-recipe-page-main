@@ -1,6 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
+}
+
+:root {
+  /* == Custom properties == */
+  /* Primayr */
+  --nutmeg: hsl(14, 45%, 36%);
+  --dark-raspberry: hsl(332, 51%, 32%);
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --light-grey: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+
+  /* Sizes */
+  --sdt-brd-radius: 30px;
+  --sm-brd-radius: 10px;
+  --main-title-size: 2.4rem;
+  --main-title-top-margin: 1.6rem;
+  --section-block-margin: 1.5rem;
+}
+
+h1,
+h2 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: var(--eggshell);
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  margin-block: 5rem;
+  padding: 2.5rem;
+  max-width: 90ch;
+  background-color: var(--white);
+  border-radius: var(--sdt-brd-radius);
+}
+
+img {
+  border-radius: var(--sm-brd-radius);
+  width: 100%;
+}
+
+li {
+  translate: -0.25rem 0;
+  padding-block: 0.25rem;
+}
+
+li > .recipe-text {
+  padding-left: 0.9rem;
+}
+
+.recipe-text,
+.subtitle--prep-time {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.recipe-title {
+  color: var(--dark-charcoal);
+  font-size: var(--main-title-size);
+  margin-top: var(--main-title-top-margin);
+  margin-bottom: var(--section-block-margin);
+}
+
+/* ===== Preparation time section =====*/
+.preparation-time {
+  background-color: var(--rose-white);
+  padding: 1.5rem;
+  border-radius: var(--sm-brd-radius);
+}
+
+.preparation-time > .recipe-section_content {
+  padding: 0.5rem 0 0 1.5rem;
+}
+
+.prep-time_li {
+  color: var(--dark-raspberry);
+  translate: -0.25rem 0;
+  padding-block: 0.25rem;
+}
+
+.subtitle--prep-time {
+  color: var(--dark-raspberry);
+  font-weight: 600;
+}
+
+/* =================================== */
+
+/* ===== Sections =====*/
+.recipe-section {
+  margin-top: var(--section-block-margin);
+}
+
+.recipe-section_content {
+  padding: 0.5rem 0 1.5rem 1.5rem;
+}
+
+.recipe-section:not(:first-of-type):not(:last-of-type)  {
+  border-bottom: var(--light-grey) 1px solid;
+}
+
+.recipe-li {
+  color: var(--nutmeg);
+}
+
+.recipe-section_instructions > .recipe-li {
+  font-weight: 600;
+}
+
+.recipe-text {
+  font-size: 16px;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--wenge-brown);
+}
+
+.subtitle,
+.nutrition-value {
+  color: var(--nutmeg);
+}
+
+/* ====================*/
+
+tr > .nutrition-value {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 376px) {
+  main {
+    max-width: 100ch;
+  }
 }
 
 .attribution {
