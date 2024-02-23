@@ -166,10 +166,20 @@ th {
   padding-block: 1rem;
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 540px) {
   main {
     max-width: 100ch;
+    margin-block: 0;
+    border-radius: 0;
   }
+
+  img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 0;
+  }
+
 }
 
 /* ===== Footer ===== */
