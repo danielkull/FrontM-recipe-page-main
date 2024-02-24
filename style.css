@@ -39,6 +39,10 @@ h2 {
 .recipe-li {
   font-family: "Outfit", sans-serif;
 }
+
+.subtitle--prep-time {
+  font-size: 1.2rem;
+}
 /* === END:Set Font === */
 
 body {
@@ -48,7 +52,7 @@ body {
 }
 
 main {
-  margin-block: 5rem;
+  margin-block: 6rem;
   max-width: 90ch;
   background-color: var(--white);
   border-radius: var(--sdt-brd-radius);
