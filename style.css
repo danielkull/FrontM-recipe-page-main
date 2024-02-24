@@ -51,19 +51,18 @@ body {
 
 main {
   margin-block: 5rem;
-  /* padding: 2.5rem; */
   max-width: 90ch;
   background-color: var(--white);
   border-radius: var(--sdt-brd-radius);
 }
 
 .main-article_wrapper{
-  padding-inline: 2.5rem;
+  padding-inline: 2rem;
   padding-bottom: 1rem;
 }
 
 .main-img_wrapper {
-  padding-inline: 2.5rem;
+  padding-inline: 2rem;
   padding-top: 2.5rem;
 }
 
